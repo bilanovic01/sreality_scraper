@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sreality Scraped Items</title>
+</head>
+<body>
+    <h1>Sreality Scraped Items</h1>
+    <ul>
+        {% for item in items %}
+        <li>
+            <h2>{{ item.title }}</h2>
+            <img src="{{ item.image_url }}" alt="{{ item.title }}">
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
